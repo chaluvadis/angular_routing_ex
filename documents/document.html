@@ -1,0 +1,26 @@
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron" data-ng-controller="documentController">
+    <h1>{{name}}</h1>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Created By</th>
+                    <th>Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="a in documents">
+                    <td>{{a.id}}</td>
+                    <td>{{a.title}}</td>
+                    <td>{{a.description}}</td>
+                    <td>{{a.createdby}}</td>
+                    <td>{{a.createdDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
